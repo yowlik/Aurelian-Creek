@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aurelian Creek</string>
+    <string name="image_chooser">Choose Image</string>
+    <string name="facebook_app_id">489761876236548</string>
+    <string name="fb_login_protocol_scheme">fb489761876236548</string>
+
+</resources>

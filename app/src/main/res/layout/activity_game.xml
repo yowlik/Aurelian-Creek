@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backer"
+    tools:context=".white.Game">
+
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="@color/black"
+        android:shadowRadius="10"
+        android:fontFamily="@font/fonts"
+        android:text="Red"
+        android:textColor="#FFE500"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <ProgressBar
+        android:id="@+id/progs"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="56dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:progressDrawable="@drawable/custom_progress"
+        android:scaleY="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="375dp"
+        android:layout_height="375dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="100dp"
+        android:background="@color/black"
+        android:columnCount="2"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/im1"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="5dp"
+            android:src="#FFE500" />
+
+        <ImageView
+            android:id="@+id/im2"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:src="#0027FF" />
+
+        <ImageView
+            android:id="@+id/im3"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="#FA0000" />
+
+        <ImageView
+            android:id="@+id/im4"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="#00FF0A" />
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:backgroundTintMode="screen"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        app:layout_constraintVertical_bias="0.455">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/black"
+            android:shadowRadius="4"
+            android:fontFamily="@font/fonts"
+            android:text="Score : "
+            android:textColor="#0027FF"
+            android:textSize="50dp" />
+        <TextView
+            android:id="@+id/scre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonts"
+            android:shadowColor="@color/black"
+            android:shadowRadius="4"
+            android:text="0"
+            android:textSize="50dp"
+            android:textColor="#0027FF"/>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
